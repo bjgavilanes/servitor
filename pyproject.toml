@@ -1,0 +1,12 @@
+[project]
+name = "servitor"
+version = "0.1.0"
+description = "Automated job applying"
+authors = ["Brayen Gavilanes <bjgavilanes@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "selenium>=4.27.1",
+    "webdriver-manager>=4.0.2",
+]
