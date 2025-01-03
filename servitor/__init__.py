@@ -25,3 +25,24 @@ def initialize_webdriver(headless_mode=False):
 
 driver = initialize_webdriver(HEADLESS_MODE)
 wait = WebDriverWait(driver, DEFAULT_WAIT_TIME)
+
+
+def auth():
+    driver.get(f"{AUTH_URL}")
+    wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".login__form")))
+    driver.find_element(By.ID, "username").send_keys(AUTH_USERNAME)
+    driver.find_element(By.ID, "password").send_keys(AUTH_PASSWORD)
+    driver.execute_script(
+        "arguments[0].click();",
+        driver.find_element(By.CSS_SELECTOR, ".btn__primary--large"),
+    )
+
+
+def main():
+    auth()
+    wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".global-nav__nav")))
+    driver.get(f"{URL}")
+
+
+if __name__ == "__main__":
+    main()
