@@ -42,10 +42,23 @@ def auth():
     )
 
 
+def job_applying():
+    driver.get(f"{URL}")
+    """ Use job list CSS Selector """
+    wait.until(
+        EC.element_to_be_clickable(
+            (By.CSS_SELECTOR, ".HMyIuaHQTvatijhUGNtVoSMvZWgHCMThk")
+        )
+    )
+    job_list = driver.find_element(
+        By.CSS_SELECTOR, ".HMyIuaHQTvatijhUGNtVoSMvZWgHCMThk"
+    ).find_elements(By.CSS_SELECTOR, "li")
+
+
 def main():
     auth()
     wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".global-nav__nav")))
-    driver.get(f"{URL}")
+    job_applying()
 
 
 if __name__ == "__main__":
