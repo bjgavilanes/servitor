@@ -34,8 +34,8 @@ wait = WebDriverWait(driver, DEFAULT_WAIT_TIME)
 def auth():
     driver.get(f"{AUTH_URL}")
     wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".login__form")))
-    driver.find_element(By.ID, "username").send_keys(AUTH_MAIL)
-    driver.find_element(By.ID, "password").send_keys(AUTH_PASSWORD)
+    driver.find_element(By.CSS_SELECTOR, "#username").send_keys(AUTH_MAIL)
+    driver.find_element(By.CSS_SELECTOR, "#password").send_keys(AUTH_PASSWORD)
     driver.execute_script(
         "arguments[0].click();",
         driver.find_element(By.CSS_SELECTOR, ".btn__primary--large"),
