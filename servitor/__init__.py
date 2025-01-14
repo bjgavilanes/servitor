@@ -63,6 +63,19 @@ def job_applying():
                 (By.CSS_SELECTOR, ".jobs-apply-button--top-card")
             )
         )
+        easy_apply_button = driver.find_element(
+            By.CSS_SELECTOR, ".jobs-apply-button--top-card"
+        ).find_element(By.CSS_SELECTOR, "button")
+        driver.execute_script("arguments[0].click();", easy_apply_button)
+        safe_easy_apply_buton = driver.find_element(
+            By.CSS_SELECTOR, ".jobs-s-apply"
+        ).find_element(By.CSS_SELECTOR, "button")
+        driver.execute_script("arguments[0].click();", safe_easy_apply_buton)
+        wait.until(
+            EC.invisibility_of_element(
+                (By.CSS_SELECTOR, '[aria-labelledby="jobs-apply-header"]')
+            )
+        )
 
 
 def main():
