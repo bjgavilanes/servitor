@@ -53,6 +53,16 @@ def job_applying():
     job_list = driver.find_element(
         By.CSS_SELECTOR, ".HMyIuaHQTvatijhUGNtVoSMvZWgHCMThk"
     ).find_elements(By.CSS_SELECTOR, "li")
+    for element in job_list:
+        driver.execute_script(
+            "arguments[0].click();",
+            element,
+        )
+        wait.until(
+            EC.element_to_be_clickable(
+                (By.CSS_SELECTOR, ".jobs-apply-button--top-card")
+            )
+        )
 
 
 def main():
