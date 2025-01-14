@@ -8,3 +8,6 @@ check: ${SRC}
 
 run: check
 	uv run ${SRC}
+
+push: check
+	git push origin main
