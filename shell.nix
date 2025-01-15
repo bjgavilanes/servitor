@@ -8,6 +8,6 @@ pkgs.mkShellNoCC {
     uv
     ruff
     pandoc
-    texliveMinimal
+    texliveSmall
   ];
 }
