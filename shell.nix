@@ -7,5 +7,7 @@ pkgs.mkShellNoCC {
   packages = with pkgs; [
     uv
     ruff
+    pandoc
+    texliveMinimal
   ];
 }
