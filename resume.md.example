@@ -1,0 +1,88 @@
+# Brayen Gavilanes
+
+## DevOps Engineer & IT Project Manager
+
+## Contact Information
+
+- Email: bjgavilanes@gmail.com
+- Webpage: sonlosgavilanes.com
+- Phone: +543518106254
+- LinkedIn: https://www.linkedin.com/in/bjgavilanes/
+
+## Summary
+
+Highly experienced DevOps Engineer and IT Project Manager with a strong background in UNIX engineering. Proven track record of delivering successful projects and leading high-performing teams. Skilled in Agile methodologies, cloud computing, and automation tools.
+
+## Technical Skills
+
+- Cloud Platforms: AWS, Azure, Google Cloud
+- Automation Tools: Ansible, Puppet, Chef
+- Agile Methodologies: Scrum, Kanban
+- Programming Languages: Python, Java, C++, JavaScript, TypeScript, PHP, Go, Rust
+- Databases: MongoDB, PostgreSQL, MySQL
+- Frameworks: Django, Flask, React, NodeJS, Express, NestJS
+- Operating Systems: UNIX, Linux, Windows, macOS
+- Version Control: Git, SVN
+
+## Professional Experience
+
+### DevOps Engineer
+
+#### PermaTécne (2019 - Present )
+
+- Designed and implemented automated deployment pipelines using Ansible and Jenkins
+- Collaborated with development teams to ensure smooth deployment of applications to production
+- Managed and optimized cloud infrastructure on AWS, resulting in 30% cost savings
+- Implemented monitoring and logging tools, including Prometheus and ELK Stack
+
+### IT Project Manager
+
+#### PermaTécne ( 2015 - Present )
+
+- Led multiple IT projects, including software development, infrastructure upgrades, and cloud migrations
+- Coordinated with cross-functional teams, including development, QA, and operations
+- Developed and managed project plans, resource allocation, and budgets
+- Implemented Agile methodologies, resulting in 25% increase in project delivery speed
+
+### Senior Developer
+
+#### PermaTécne (2020 - Present)
+
+- Designed and developed multiple high-traffic web and server-side applications using Python, Django, NodeJS, and Express
+- Led teams of junior developers to deliver projects on time and on budget
+- Collaborated with cross-functional teams to identify and prioritize project requirements
+- Implemented automated testing and deployment scripts using Jenkins, Docker, and Jest
+
+### Senior QA Automation Engineer
+
+#### PermaTécne (2020 - Present)
+
+- Designed and developed automated testing frameworks using Java, Selenium, and TestNG
+- Implemented automated testing solutions for web and mobile applications
+- Collaborated with cross-functional teams to identify and prioritize testing requirements
+- Developed and maintained testing documentation and test plans
+
+## Volunteer Experience
+
+- National Coordinator, Ecuador, Students for Liberty (May 2024 - Present)
+- Senior Coordinator, Students for Liberty (July 2020 - May 2024)
+- President, Rotary International, Rotaract Club Guayaquil Centenario (September 2020 - June 2022)
+- Member of the Governing Body, OfflinePedia (November 2022 - Present)
+
+---
+
+## Presentation
+
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl lg:max-w-3xl">
+  <div class="px-6 py-4">
+    <video className="w-full h-auto" controls>
+      <source src="/presentation_video.mp4" type="video/mp4" />
+      <p>
+        <a href="https://sonlosgavilanes.com/presentation_video.mp4">
+          <strong>Click here to watch presentation</strong>
+        </a>
+      </p>
+      <p>Or go to https://sonlosgavilanes.com/presentation_video.mp4</p>
+    </video>
+  </div>
+</div>
