@@ -63,6 +63,7 @@ def job_applying(driver: webdriver.Firefox, wait: WebDriverWait, url: str) -> No
         By.CSS_SELECTOR, "div.scaffold-layout__list ul li[data-occludable-job-id]"
     )
     for element in job_list:
+        driver.execute_script("arguments[0].scrollIntoView(true);", element)
         driver.execute_script("arguments[0].click();", element)
         wait.until(
             EC.element_to_be_clickable(
