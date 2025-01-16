@@ -39,9 +39,16 @@ def auth(
     wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".login__form")))
     driver.find_element(By.CSS_SELECTOR, "#username").send_keys(auth_mail)
     driver.find_element(By.CSS_SELECTOR, "#password").send_keys(auth_password)
+    try:
+        driver.execute_script(
+            "arguments[0].click();",
+            driver.find_element(By.CSS_SELECTOR, ".remember_me__opt_in input"),
+        )
+    except Exception:
+        pass
     driver.execute_script(
         "arguments[0].click();",
-        driver.find_element(By.CSS_SELECTOR, ".btn__primary--large"),
+        driver.find_element(By.CSS_SELECTOR, ".login__form_action_container button"),
     )
 
 
