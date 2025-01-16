@@ -57,13 +57,11 @@ def job_applying(driver: webdriver.Firefox, wait: WebDriverWait, url: str) -> No
     """Apply for jobs."""
     driver.get(url)
     wait.until(
-        EC.element_to_be_clickable(
-            (By.CSS_SELECTOR, ".HMyIuaHQTvatijhUGNtVoSMvZWgHCMThk")
-        )
+        EC.element_to_be_clickable((By.CSS_SELECTOR, "div.scaffold-layout__list"))
     )
-    job_list = driver.find_element(
-        By.CSS_SELECTOR, ".HMyIuaHQTvatijhUGNtVoSMvZWgHCMThk"
-    ).find_elements(By.CSS_SELECTOR, "li")
+    job_list = driver.find_elements(
+        By.CSS_SELECTOR, "div.scaffold-layout__list ul li[data-occludable-job-id]"
+    )
     for element in job_list:
         driver.execute_script("arguments[0].click();", element)
         wait.until(
